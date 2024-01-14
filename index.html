@@ -37,7 +37,7 @@
           <h3 class="nav__name">Rian</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#Home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About Me</a>
@@ -46,7 +46,7 @@
               <a href="#projects" class="nav__link">Project</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
             </li>
           </ul>
           <!-- Close button -->
@@ -56,6 +56,8 @@
         </div>
 
         <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
           <!-- Toggle button -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
@@ -509,30 +511,65 @@
               <div class="contact__group">
                 <!-- Firest Name -->
                 <div class="contact__box">
-                  <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Firest Name">
-                  <label title="name" for="name" class="contact__label">Firest Name</label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="contact__input"
+                    id="name"
+                    required
+                    placeholder="Firest Name"
+                  />
+                  <label title="name" for="name" class="contact__label"
+                    >Firest Name</label
+                  >
                 </div>
                 <!-- Email Address -->
                 <div class="contact__box">
-                  <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                  <label title="email" for="email" class="contact__label">Email Address</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="contact__input"
+                    id="email"
+                    required
+                    placeholder="Email Address"
+                  />
+                  <label title="email" for="email" class="contact__label"
+                    >Email Address</label
+                  >
                 </div>
               </div>
 
               <!-- Subject -->
               <div class="contact__box">
-                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                <label title="subject" for="subject" class="contact__label">Subject</label>
+                <input
+                  type="text"
+                  name="user_subject"
+                  class="contact__input"
+                  id="subject"
+                  required
+                  placeholder="Subject"
+                />
+                <label title="subject" for="subject" class="contact__label"
+                  >Subject</label
+                >
               </div>
 
               <!-- Message -->
               <div class="contact__box contact__area">
-                <textarea name="user_message" id="message"  class="contact__input" required placeholder="Message"></textarea>
-                <label title="message" for="message" class="contact__label">Message</label>
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Message"
+                ></textarea>
+                <label title="message" for="message" class="contact__label"
+                  >Message</label
+                >
               </div>
 
               <p class="contact__message" id="contact-message"></p>
-              
+
               <!-- Button action -->
               <button type="submit" class="contact__button button">
                 <i class="ri-send-plane-line"></i> Send A Message
@@ -541,8 +578,12 @@
           </div>
 
           <div class="contact__social">
-            <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
-          
+            <img
+              src="assets/img/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+
             <div class="contact__social-data">
               <div>
                 <p class="contact__social-description-1">
@@ -554,13 +595,28 @@
               </div>
 
               <div class="contact__social-links">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="contact__social-link">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__social-link"
+                >
                   <i class="ri-facebook-circle-line"></i>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="contact__social-link">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__social-link"
+                >
                   <i class="ri-instagram-line"></i>
                 </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact__social-link">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__social-link"
+                >
                   <i class="ri-linkedin-line"></i>
                 </a>
               </div>
@@ -571,14 +627,36 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <footer class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__links">About</a>
+          </li>
+          <li>
+            <a href="#services" class="footer__links">Services</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__links">Projects</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">Bedimcode.</a>
+        </span>
+      </footer>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
