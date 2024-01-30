@@ -823,6 +823,14 @@ body.dark-theme {
 .projects__image {
   position: relative;
   margin-bottom: 0.75rem;
+  height: 35vh;
+  max-height: 35vh;
+}
+
+.projects__img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: inherit !important;
 }
 
 .projects__button {
